@@ -1,0 +1,18 @@
+submission_schema_version: "coverage-submission/1.0"
+participant_id: "P224"
+protocol_version: "coverage-policy/1.0"
+task_version: "coverage-task/1.0"
+entrypoint: "entry:build_policy"
+artifact_dir: "artifacts"
+checkpoint_manifest:
+- path: artifacts/policy-config.json
+  sha256: 2f9ca1ec35924e30d493c597b6d9fa86f225fea2b3cf6410aad9b1d43fdf5e0b
+  size_bytes: 51
+inference_lock: "requirements-infer.lock"
+method_type: "rule"
+train_command: null
+training_config_paths: []
+report_path: "REPORT.md"
+metadata:
+  description: "纯规则策略：基于 MPE2 精确运动学的可达集判定 + 锁定式最近目标 bang-bang 拦截"
+  paradigm: "rule-based, no learned artifact"
